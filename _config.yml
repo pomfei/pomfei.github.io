@@ -10,7 +10,7 @@ beian:
 cnzz:
 weibo: 1830766915
 github: pomfei
-pygments: true
+highlighter: true
 safe: true
 paginate: 20
 about: "帝都北漂码农一枚，爱分享，爱自由，无奈年纪已大，肚腩已肥，但依旧保持一颗闷骚的心。"
