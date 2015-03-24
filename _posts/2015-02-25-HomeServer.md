@@ -43,6 +43,12 @@ BTW: 我没有安装成功，不知道为什么会出现time out的错误，于�
 
 安装windows 7虚拟机
 
+http://www.philipp.haussleiter.de/2013/07/creating-a-smartos-dataset-for-win-srv-2k12r2/
+http://ispire.me/how-to-create-smartos-windows-vm/
+
+
 **其他**
 
-To be continued... ...
+To be continued
+
+
