@@ -1,7 +1,7 @@
 ---
 date: 2015-03-24 22:10:43
 layout: post
-title: Gen8在SmartOS中安装Windows虚拟机
+title: Install the Windows vitual machine in SmartOS
 categories: 文章
 tags: 新奇好玩
 ---
@@ -102,7 +102,7 @@ You can access your VM via a VNC Viewer (we are using TightVNC). You can get the
 ```shell
 {
   "vnc": {
-    "host": "10.0.0.21",
+    "host": "10.0.0.6",
     "port": 34783,
     "display": 28883
   }
@@ -112,7 +112,7 @@ You can access your VM via a VNC Viewer (we are using TightVNC). You can get the
 After install the windows, you can find the net drivers in the smartos-vmtools cdrom -> windows -> drivers -> NetKVM -> Vista.
 
 
-本文参考以下两篇文章
+Refer to these two articles:
 http://ispire.me/how-to-create-smartos-windows-vm/
 http://www.philipp.haussleiter.de/2013/07/creating-a-smartos-dataset-for-win-srv-2k12r2/
 
