@@ -116,4 +116,3 @@ After install the windows, you can find the net drivers in the smartos-vmtools c
 http://ispire.me/how-to-create-smartos-windows-vm/
 http://www.philipp.haussleiter.de/2013/07/creating-a-smartos-dataset-for-win-srv-2k12r2/
 
-
