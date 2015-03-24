@@ -1,7 +1,7 @@
 ---
 date: 2015-03-24 22:10:43
 layout: post
-title: Install the Windows vitual machine in SmartOS
+title: Install the Windows virtual machine in SmartOS
 categories: 文章
 tags: 新奇好玩
 ---
