@@ -27,20 +27,24 @@ Move to your /opt dir and get the latest smartos-vmtools sources:
 [root@SmartOS /]# cd /opt/
 [root@SmartOS /opt]# git clone git://github.com/joyent/smartos-vmtools.git smartos-vmtools
 ```
+
 But because there are some unknow reasons that i don't konow,the git command does not work, so i used wget command to get the source code from github.com
 
 ```shell
 [root@SmartOS /opt]# wget --no-check-certificate https://github.com/joyent/smartos-vmtools/archive/master.zip
 [root@SmartOS /opt]# unzip master.zip
 ```
+
 Build the iso which will be needed from source:
 
 ```shell
 [root@SmartOS /opt]# cd /opt/smartos-vmtools/
 [root@SmartOS /opt/smartos-vmtools/]# ./bin/build-image
 ```
+
 Create an empty KVM instance:
 I store the *.json file in /usbkey/vmcfg, you can choose the dir where you liked.
+
 ```shell
 [root@SmartOS /opt/smartos-vmtools/]# cd /usbkey/vmcfg
 [root@SmartOS /usbkey/vmcfg]# vi win7.json
@@ -72,14 +76,17 @@ I store the *.json file in /usbkey/vmcfg, you can choose the dir where you liked
   ]
 }
 ```
-the "disks"->"model" you can also choose virtio, but i failed when loading the driver. So i suggest "ide" in you config file.
+
+The "disks"->"model" you can also choose virtio, but i failed when loading the driver. So i suggest "ide" in you config file.
 
 Then creat the windows VM:
+
 ```shell
 [root@SmartOS /usbkey/vmcfg]# vmadm create -f win7.json
 ```
 
 Cope the smartos-vmtools to the new VM's root:
+
 ```shell
 [root@SmartOS /usbkey/vmcfg]# cp /opt/smartos-vmtools-master/cache/smartos-vmtools-20150315092000.iso /zones/YourInstanceUUID/root/
 ```
@@ -88,6 +95,7 @@ Upload your windows install ISO to /zones/YourInstanceUUID/root/,you can use you
 
 
 Then start the VM:
+
 ```shell
 [root@SmartOS /usbkey/vmcfg]# cd /zones/YourInstanceUUID/
 [root@SmartOS /zones/YourInstanceUUID/]# vmadm boot YourInstanceUUID order=cd,once=d cdrom=/yourwindows.iso,ide cdrom=/smartos-vmtools-20150315092000.iso,ide
