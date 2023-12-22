@@ -4,7 +4,7 @@ url: http://www.nbyteam.com
 name: 明月夜 小轩窗
 author: NByteam.com
 qq:
-email: pengfei.xu@nbyteam.com
+email: pomfei@nbyteam.com
 duoshuo: nbyteam
 beian:
 cnzz:
@@ -13,4 +13,6 @@ github: pomfei
 highlighter: true
 safe: true
 paginate: 20
-about: "帝都北漂码农一枚，爱分享，爱自由，无奈年纪已大，肚腩已肥，但依旧保持一颗闷骚的心。"
+about: "性别男，爱好女"
+
+timezone: Asia/Shanghai
