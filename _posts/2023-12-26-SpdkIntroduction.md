@@ -248,7 +248,3 @@ UIO(Userspace I/O)，用户空间下驱动程序的支持机制。Linux系统中
 参考：
 
 [虚拟化 vfio 和UIO 区别](https://zhuanlan.zhihu.com/p/544076987)
-
-[SPDK编译](https://dapustor.feishu.cn/docx/ERk2dvNOJouWTgxIW9nc5KhonnU) 
-
-[SPDK环境设置和问题解决](https://dapustor.feishu.cn/docx/SrgGdMcJSojfmpxK4POc4f2UnYf) 
